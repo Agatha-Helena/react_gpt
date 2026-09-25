@@ -1,7 +1,8 @@
+import './Footer.css'
+
 function Footer({ano, nomeLoja}){
     return(
-        <footer>
-            <p>────────────────────────────</p>
+        <footer className='autoparts-footer'>
             <p>{nomeLoja} &copy; {ano}</p>
             <p>Sua loja de peças automotivas</p>
         </footer>

@@ -1,14 +1,21 @@
+import './Header.css'
+
 function Header({nomeLoja, mensagem}){
     return(
         <header>
-            <h1>🚗 {nomeLoja}</h1>
-            <p>{mensagem}</p>
-            <nav>
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Produtos</a></li>
-                    <li><a href="#">Carrinho</a></li>
-                </ul>
+            <nav className="navbar autoparts-navbar">
+                <div className="container">
+                    <a href="#" className="navbar-brand">
+                        🚗 {nomeLoja}
+                        <br/>
+                            {mensagem}
+                    </a>
+                    <ul className="nav gap-2">
+                        <li className="nav-item"><a href="#" className="nav-link">Inicio</a></li>
+                        <li className="nav-item"><a href="#" className="nav-link">Produtos</a></li>
+                        <li className="nav-item"><a href="#" className="nav-link">Carrinho</a></li>
+                    </ul>
+                </div>
             </nav>
         </header>
     )
