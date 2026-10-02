@@ -1,6 +1,6 @@
 import './Header.css'
 
-function Header({nomeLoja, mensagem}){
+function Header({nomeLoja, mensagem, quantidade}){
     return(
         <header>
             <nav className="navbar autoparts-navbar">
@@ -13,7 +13,7 @@ function Header({nomeLoja, mensagem}){
                     <ul className="nav gap-2">
                         <li className="nav-item"><a href="#" className="nav-link">Inicio</a></li>
                         <li className="nav-item"><a href="#" className="nav-link">Produtos</a></li>
-                        <li className="nav-item"><a href="#" className="nav-link">Carrinho</a></li>
+                        <li className="nav-item"><a href="#" className="nav-link">Carrinho {quantidade > 0 && <span className="quantidade">{quantidade}</span>}</a></li>
                     </ul>
                 </div>
             </nav>

@@ -10,6 +10,7 @@ const ano = '2026'
 function App() {
 
   const [carrinho, setCarrinho] = useState([])
+  const quantidade = carrinho.length
 
   function adicionarAoCarrinho(produto){
     setCarrinho([...carrinho, produto])
@@ -18,7 +19,7 @@ function App() {
 
   return(
     <>
-      <Header nomeLoja={nomeLoja} mensagem={mensagem}/>
+      <Header nomeLoja={nomeLoja} mensagem={mensagem} quantidade={quantidade}/>
       <main>
         <br/>
         <div className='container'>

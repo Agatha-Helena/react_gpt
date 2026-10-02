@@ -1,5 +1,5 @@
 .autoparts-navbar {
-    background-color: #3e1b67;
+    background-color: #3d1b65;
 }
 
 .autoparts-navbar ul li a {
@@ -12,11 +12,23 @@
 }
 
 .autoparts-navbar ul li a:hover {
-    color: white;
+    color: #f1e619;
     font-weight: 600;
-    
 }
 
 .autoparts-navbar ul li:hover {
     background-color: #2c0e51;
+}
+
+.autoparts-navbar ul li a:visited {
+    color: white;
+}
+
+.quantidade {
+    background-color: #f1e619;
+    color: #3e1b67;
+    border-radius: 50%;
+    padding: 2px 7px;
+    font-size: 12px;
+    font-weight: 600;
 }
